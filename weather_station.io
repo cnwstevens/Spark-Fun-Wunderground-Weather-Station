@@ -38,7 +38,8 @@ float baromin;
 
 const char destServer[] = "rtupdate.wunderground.com";
 
-const String httpRequest = "GET /weatherstation/updateweatherstation.php?ID="+WU_pwsID+"&PASSWORD="+WU_pwsPASSWORD+"&dateutc=now&tempf=63&baromin="+baromin+"&action=updateraw&realtime=1&rtfreq=60 HTTP/1.1\n"
+const String httpRequest = "GET /weatherstation/updateweatherstation.php?ID="+WU_pwsID+"&PASSWORD="+WU_pwsPASSWORD+"&dateutc=now&winddir="+winddir+"&tempf="+tempf+
+                           "&windspeedmph="+windspeed+"&rainin="+rainin+"&baromin="+baromin+"&humidity="+humidity+"&action=updateraw&realtime=1&rtfreq=60 HTTP/1.1\n"
                            "Host: rtupdate.wunderground.com\n"
                            "Connection: close\n\n";
 
